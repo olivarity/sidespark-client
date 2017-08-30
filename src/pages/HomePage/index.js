@@ -25,17 +25,20 @@ class HomePage extends Component {
       </tr>
     )
     return(
-      <table className="table">
-        <thead>
-          <tr>
-            <th>Project Name</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tableItems}
-        </tbody>
-      </table>
+      <div>
+        <h1>iM a HaCkEr NoW!</h1>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tableItems}
+          </tbody>
+        </table>
+      </div>
     )
   }
 
