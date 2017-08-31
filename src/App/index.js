@@ -30,7 +30,7 @@ class App extends Component {
     const auth = this.state.auth;
     return (
       <Router>
-        <div className="container p-0 grid-lg">
+        <div>
           <Nav auth={this.state.auth} />
           <div className="container grid-md">
             <Route exact path="/" component={HomePage} />
