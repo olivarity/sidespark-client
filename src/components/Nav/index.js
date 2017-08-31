@@ -20,7 +20,7 @@ class Nav extends Component {
         <div className="navbar-section">
           { auth
             ? <div>
-                <Link to="/create" className="btn btn-link">Create New</Link>
+                <Link to="/create" className="btn btn-link hide-xs">New Project</Link>
                 <figure className="avatar m-1" onClick={this.clickHandler}>
                   <img src={auth.avatar.image_48} alt={auth.name} />
                 </figure>
