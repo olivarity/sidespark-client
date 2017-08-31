@@ -21,7 +21,11 @@ class Nav extends Component {
           { auth
             ? <div>
                 <Link to="/create" className="btn btn-link hide-xs">New Project</Link>
-                <figure className="avatar m-1" onClick={this.clickHandler}>
+                <figure
+                  className="avatar m-1"
+                  onClick={this.clickHandler}
+                  style={{cursor: 'pointer'}}
+                >
                   <img src={auth.avatar.image_48} alt={auth.name} />
                 </figure>
                 <ProfileMenu auth={auth} isVisible={this.state.showMenu} />
