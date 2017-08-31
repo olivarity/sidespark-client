@@ -11,9 +11,9 @@ function Nav ({ auth }) {
         { auth
           ? <div>
               <Link to="/create" className="btn btn-link">Create New</Link>
-              <a href="/connect/logout" className="btn btn-link">
-                <span className="text-error">Sign Out</span>
-              </a>
+              <figure className="avatar m-1">
+                <img src={auth.avatar.image_48} alt={auth.name} />
+              </figure>
             </div>
           : <a href="/connect/slack" className="btn btn-link">Sign in with Slack</a>
         }
