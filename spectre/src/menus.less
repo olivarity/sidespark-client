@@ -15,6 +15,11 @@
     box-shadow: none;
   }
 
+  &.menu-right {
+    position: absolute;
+    right: 8px;
+  }
+
   .menu-item {
     margin-top: 0;
     padding: 0 @unit-2;
@@ -30,13 +35,13 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        background: @secondary-color;
-        color: @primary-color;
+        background: @primary-color-dark;
+        color: @light-color;
       }
       &:active,
       &.active {
-        background: @secondary-color;
-        color: @primary-color;
+        background: @primary-color-dark;
+        color: @light-color;
       }
     }
 
